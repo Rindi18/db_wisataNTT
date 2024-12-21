@@ -1,0 +1,499 @@
+/* General Reset and Body Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url('nusa.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #000000;
+}
+
+/* Header Styles */
+header {
+  background-color: #3f3f3f;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  position: relative;
+  margin-right: 5px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+nav a i {
+  margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  opacity: 1;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #575757;
+}
+
+/* Section Styles */
+section {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 1rem auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+section h1, section h2, section h3 {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: #333;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Specific Styles for Beranda Section */
+#beranda {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(196, 102, 102, 0.2);
+}
+
+#beranda h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff6347;
+  animation: fadeIn 2s ease-in-out;
+}
+
+#beranda p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Welcome Section Styles */
+#welcome {
+  text-align: center;
+  padding: 4rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(196, 102, 102, 0.2);
+}
+
+#welcome h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #ff6347;
+  animation: fadeIn 2s ease-in-out, slideIn 1s ease-out;
+}
+
+#welcome p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Footer Styles */
+footer {
+  position: fixed; /* Menjadikan footer tetap di bagian bawah */
+  left: 0; /* Menjadikan footer melekat pada sisi kiri */
+  bottom: 0; /* Menjadikan footer melekat pada sisi bawah */
+  width: 100%; /* Menyamakan lebar dengan lebar halaman */
+  height: 40px; /* Ubah tinggi footer sesuai kebutuhan */
+  background-color: #747474; /* Warna latar belakang */
+  color: white; /* Warna teks */
+  padding: 2rem; /* Padding di dalam footer */
+  text-align: center; /* Membuat teks menjadi rata tengah */
+}
+
+/* Home Styles */
+#home {
+  background-image: url('nusa1.jpg');
+  background-size: contain;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#home h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#budaya li {
+  margin-bottom: 1%;
+}
+
+#budaya img {
+  width: 30%;
+  height: 28;
+  object-fit:black;
+  border-radius: 10px;
+}
+
+#budaya h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#upacara {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem;
+}
+
+#upacara img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#rumah_adat {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem;
+}
+
+#rumah_adat img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#baju_adat {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem;
+}
+
+#baju_adat img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#festival img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#tari_tradisional {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem;
+}
+
+#tari_tradisional img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#about li {
+  margin-bottom: 1%;
+}
+
+#about img {
+  width: 30%;
+  height: 28;
+  object-fit:black;
+  border-radius: 10px;
+}
+
+#about h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#places li {
+  margin-bottom: 1%;
+}
+
+#places img {
+  width: 30%;
+  height: 28;
+  object-fit:black;
+  border-radius: 10px;
+}
+
+#places h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+#transportation li {
+  margin-bottom: 1%;
+}
+
+#transportation img {
+  width: 30%;
+  height: 28;
+  object-fit:black;
+  border-radius: 10px;
+}
+
+#transportation h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+#contact li {
+  margin-bottom: 1%;
+}
+
+#contact img {
+  width: 30%;
+  height: 28;
+  object-fit:black;
+  border-radius: 10px;
+}
+
+#contact h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Subsections Styles */
+section {
+  padding: 2rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+section img {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #353535;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  clear: both;
+}
+
+/* Index untuk mengatur ukuran gambar dalam galeri */
+.gallery-container a img {
+  width: 100%; /* Mengatur lebar gambar menjadi 100% dari container */
+  height: auto; /* Mengatur tinggi gambar agar proporsional */
+  max-width: 350px; /* Mengatur lebar maksimum gambar */
+  max-height: 250px; /* Mengatur tinggi maksimum gambar */
+  object-fit: cover; /* Memastikan gambar selalu terisi di dalam area yang ditentukan */
+  border-radius: 15px; /* Memberikan sudut bulat pada gambar */
+  margin: 10px; /* Memberikan jarak antara gambar */
+}
+
+/* Efek hover untuk gambar pada galeri */
+.gallery-container a:hover img {
+  transform: scale(1.1); /* Memperbesar gambar saat dihover */
+  transition: transform 0.5s ease; /* Efek transisi smooth */
+}
+
+/* Styles for Accommodation Section */
+#accommodation {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 1rem auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#accommodation h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#accommodation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#accommodation li {
+  margin-bottom: 2rem;
+}
+
+#accommodation img {
+  width: 30%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+#accommodation h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Styles for About Section */
+#about {
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 1rem auto;
+  max-width: 1200px;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#about h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+#about img {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* Responsive Mobile Navigation */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: -100%; /* Hide the menu off-screen initially */
+    width: 70%; /* Adjust width as needed */
+    height: 100%;
+    background-color: #3f3f3f;
+    transition: left 0.3s ease-in-out;
+    padding-top: 2rem;
+    z-index: 9999;
+  }
+
+  /* Menu item styling for mobile */
+  nav li {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  /* Toggle button for mobile menu */
+  .menu-toggle {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+    z-index: 10000;
+  }
+
+  /* Show menu when active */
+  nav ul.active {
+    left: 0; /* Slide in the menu */
+  }
+}
+
+/* Menu toggle button styling */
+.menu-toggle i {
+  color: white;
+}
+
